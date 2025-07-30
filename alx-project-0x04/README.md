@@ -1,40 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
+### 📁 Variant-Specific Files
 
-First, run the development server:
+#### 0x04 - useState Version
+- Simple local state management in a single component
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+#### 0x05 - Context API Version
+- `context/CountContext.tsx`: Context provider and hooks
+- `_app.tsx`: Application wrapped with context provider
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 0x06 - Redux Version
+- `store/store.ts`: Redux store configuration
+- Components updated to use `useSelector` and `useDispatch` hooks
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## ✅ Expected Outcomes  
+By the end of this series, you will have:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+1. A working counter application in three versions (useState, Context API, Redux)  
+2. Clear understanding of when to use each state management technique  
+3. Practical experience with modern React state management tools  
+4. A foundation for building larger, more complex applications  
+5. Confidence to choose the right state management strategy for your projects
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚠️ Note  
+> While copying and pasting may seem convenient, **typing the code yourself** is crucial for learning.  
+We recommend you:
 
-To learn more about Next.js, take a look at the following resources:
+- Read and understand each task carefully  
+- Write the code manually to internalize logic  
+- Experiment and test different behaviors  
+- Reflect on the differences between state management techniques
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+🧠 **Hands-on practice leads to deeper learning. Keep coding!**
